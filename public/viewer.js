@@ -3,7 +3,7 @@ window.onload = () => {
     init();
   };
 
-  var socket = io("ws://localhost:5000/");
+  var socket = io("https://webstreams.herokuapp.com/");
   async function init() {
     const peer = createPeer();
     peer.addTransceiver("video", { direction: "recvonly" });

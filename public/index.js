@@ -2,7 +2,7 @@ window.onload = () => {
   document.getElementById("my-button").onclick = () => {
     init();
   };
-  var socket = io("ws://localhost:5000/");
+  var socket = io("https://webstreams.herokuapp.com//");
   async function init() {
     navigator.getUserMedia =
       navigator.getUserMedia ||
